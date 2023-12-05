@@ -2,6 +2,10 @@
 @use "hero";
 @use "shows";
 @use "plans";
+@use "watch-anywhare";
+@use "full-width";
+@use "available-devices";
+@use "faq";
 
 @font-face{
     font-family: avenir;
@@ -23,6 +27,7 @@
 }
 body{
     background-color:variaveis.$corDefundo;
+    
    
     
 
