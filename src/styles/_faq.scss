@@ -3,6 +3,8 @@
 
     h2{
         text-align: center;
+        margin-bottom: 30px;
+        
     }
     &__questions{
        
@@ -10,6 +12,7 @@
 
         &__item{
             background-color: #13151d;
+            margin-bottom: 16px;
 
 
             &__question{
@@ -18,6 +21,37 @@
                 display: block;
                 padding: 24px;
                 cursor: pointer;
+                position: relative;
+
+                &::after{
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    font-size: 40px;
+                    display: flex;
+                    align-items: center;
+                }
+
+
+            }
+
+            &__answer{
+                
+                height: 0;
+                overflow: hidden;
+            }
+            &--is-open{
+                .faq__questions__item__question::after {
+                    content: '-';
+                }
+                .faq__questions__item__answer{
+                    padding: 24px;
+                    height: auto;
+                }
+               
+                
             }
         }
     }
