@@ -1,5 +1,6 @@
 .available-devices{
     padding:5.6vw;
+    
 
     h2{
         text-align: center;
@@ -10,6 +11,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width:768px){
+            grid-template-columns: 1fr 1fr ; 
+        }
 
         &__item{
             text-align: center;

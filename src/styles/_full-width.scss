@@ -6,6 +6,16 @@
     background-repeat: no-repeat;
     background-image: url(../images/fundo_rei_leao.png);
 
+    @media (max-width:768px){
+        display: block;
+        img{
+            width: 100%;
+            padding: 0;
+            background-size: cover;
+            align-items: center;
+        }
+    }
+
     img{
         padding: 20px;
     }

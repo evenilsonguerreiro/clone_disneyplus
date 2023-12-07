@@ -4,6 +4,8 @@
     h2{
         text-align: center;
         margin-bottom: 30px;
+    
+        
         
     }
     &__questions{
@@ -38,17 +40,21 @@
             }
 
             &__answer{
-                
                 height: 0;
                 overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
+
+
             }
             &--is-open{
                 .faq__questions__item__question::after {
                     content: '-';
                 }
                 .faq__questions__item__answer{
-                    padding: 24px;
-                    height: auto;
+                    
+                    padding-bottom: 30px;
+                    transition: height, .5s ease;
                 }
                
                 
